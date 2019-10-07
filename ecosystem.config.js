@@ -5,7 +5,6 @@ module.exports = {
     script: 'index.js',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
-    args: 'one two',
     instances: 4,
     autorestart: true,
     watch: false,
@@ -26,10 +25,14 @@ module.exports = {
     production : {
       user : 'ubuntu',
       host : '54.188.157.58',
+      key: "/c/Users/chandrashekar.bekkem/Desktop/keys/ChanduOregon.pem",
       ref  : 'origin/master',
-      repo : 'git@github.com:ChanduReddy123/PM2.git',
-      path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      "pre-setup": "mkdir /home/ubuntu/testing/fasak",
+      // repo : 'git@github.com:ChanduReddy123/PM2.git',
+      repo: "https://github.com/ChanduReddy123/PM2.git",
+      ssh_options: "StrictHostKeyChecking=no",
+      path : '/home/ubuntu/testing',
+      'post-deploy' : 'npm install && npm start'
     }
   }
 } ;
