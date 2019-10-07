@@ -6,7 +6,7 @@ const port = process.env.PORT;
 // const port = 3000;
 
 userapp.get('/test',function(req,res){
-    res.send("Fasak I'm rocking")
+    res.send("Fasak")
 })
 
 userapp.get('/json',async(req,res) => {
