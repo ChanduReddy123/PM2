@@ -6,7 +6,7 @@ console.log(process.env.NODE_ENV);
 const port = 3000;
 
 userapp.get('/test',function(req,res){
-    res.send("updating the test path")
+    res.send("Deployed the latest changes now")
 })
 
 userapp.get('/json',async(req,res) => {
