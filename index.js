@@ -2,8 +2,8 @@ var express = require('express');
 var userapp = express();
 var axios = require('axios');
 console.log(process.env.NODE_ENV);
-const port = process.env.PORT;
-// const port = 3000;
+// const port = process.env.PORT;
+const port = 3000;
 
 userapp.get('/test',function(req,res){
     res.send("updating the test path")
