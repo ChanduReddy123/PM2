@@ -22,14 +22,14 @@ module.exports = {
     }
   }],
 
-  // deploy : {
-  //   production : {
-  //     user : 'node',
-  //     host : '0.0.0.0',
-  //     ref  : 'origin/master',
-  //     repo : 'git@github.com:repo.git',
-  //     path : '/var/www/production',
-  //     'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
-  //   }
-  // }
+  deploy : {
+    production : {
+      user : 'ubuntu',
+      host : '54.188.157.58',
+      ref  : 'origin/master',
+      repo : 'git@github.com:ChanduReddy123/PM2.git',
+      path : '/var/www/production',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+    }
+  }
 } ;
