@@ -32,7 +32,7 @@ module.exports = {
       repo: "https://github.com/ChanduReddy123/PM2.git",
       ssh_options: "StrictHostKeyChecking=no",
       path : '/home/ubuntu/testing',
-      'post-deploy' : 'npm install && npm start'
+      'post-deploy' : 'npm install && npm install -g pm2 && pm2 start ecosystem.config.js --env production'
     }
   }
 } ;
