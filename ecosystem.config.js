@@ -27,7 +27,7 @@ module.exports = {
       host : '54.188.157.58',
       key: "/c/Users/chandrashekar.bekkem/Desktop/keys/ChanduOregon.pem",
       ref  : 'origin/master',
-      "pre-setup": "mkdir /home/ubuntu/testing/fasak",
+      'pre-deploy': 'git reset --hard',
       // repo : 'git@github.com:ChanduReddy123/PM2.git',
       repo: "https://github.com/ChanduReddy123/PM2.git",
       ssh_options: "StrictHostKeyChecking=no",
